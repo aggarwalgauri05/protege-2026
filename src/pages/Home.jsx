@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import Header from '../components/Header';
 import './Home.css';
+import ProtegeSection from '../components/ProtegeSection';
+
 
 import heartIcon from '../assets/3dicons-notify-heart-front-color.png';
 import girlIcon from '../assets/3dicons-girl-front-color.png';
@@ -110,6 +112,10 @@ const Home = () => {
           <p>Competitions</p>
         </div>
       </section>
+
+      {/* Protege Section */}
+      <ProtegeSection />
+      
     </>
   );
 };
