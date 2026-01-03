@@ -219,3 +219,123 @@ body {
 
 
 
+.events-hero p {
+  max-width: 900px;
+  margin: 24px auto 0;
+  line-height: 1.7;
+}
+/* ===============================
+   EVENT DETAIL VIEW
+================================ */
+
+.event-detail-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 8, 8, 0.75);
+  backdrop-filter: blur(6px);
+  z-index: 2000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-detail {
+  background: #0b1111;
+
+  width: fit-content;        /* 🔥 hug content */
+  max-width: 520px;          /* 🔥 smaller modal */
+  padding: 20px 22px;        /* 🔥 tighter spacing */
+
+  border-radius: 20px;
+  position: relative;
+
+  box-shadow:
+    0 0 0 1px rgba(25, 199, 184, 0.15),
+    0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+
+/* ---------- IMAGE (SQUARE + FULLY VISIBLE) ---------- */
+
+.event-detail-image {
+  width: 100%;
+  max-width: 420px;   
+  aspect-ratio: 1 / 1;
+
+  margin: 24px auto;  /* center */
+  border-radius: 16px;
+  overflow: hidden;
+
+  background: #050808;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.event-detail-image img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+
+/* ---------- CLOSE BUTTON ---------- */
+
+.event-detail-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+
+  background: none;
+  border: none;
+
+  color: #9ef3ea;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.event-detail-close:hover {
+  color: #19c7b8;
+}
+
+.event-instagram-btn {
+  margin-top: 18px;
+  align-self: flex-start;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 10px 18px;
+  border-radius: 999px;
+
+  background: rgba(25, 199, 184, 0.15);
+  border: 1px solid rgba(25, 199, 184, 0.35);
+
+  color: #19c7b8;
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  text-decoration: none;
+
+  transition: all 0.25s ease;
+}
+
+.event-instagram-btn:hover {
+  background: rgba(25, 199, 184, 0.25);
+  transform: translateY(-2px);
+}
+
+.insta-icon {
+  font-size: 1rem;
+}
+
+.insta-arrow {
+  font-size: 0.75rem;
+  opacity: 0.8;
+}

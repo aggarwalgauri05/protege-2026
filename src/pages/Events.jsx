@@ -60,6 +60,7 @@ export default function Events() {
         </h1>
         <p>
           Mentorships, workshops, competitions & more.
+          From intense coding battles to insightful mentorship sessions, our events are built to help you grow, explore, and push your limits. 
           <span className="highlight"> Join the experience.</span>
         </p>
       </motion.section>
@@ -133,41 +134,68 @@ export default function Events() {
       </section>
 
       {/* MODAL */}
-      <AnimatePresence>
-        {selectedEvent && (
-          <motion.div
-            className="modal-backdrop"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={() => setSelectedEvent(null)}
-          >
-            <motion.div
-              className="event-modal"
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              onClick={(e) => e.stopPropagation()}
-            >
-              <button
-                className="modal-close"
-                onClick={() => setSelectedEvent(null)}
-              >
-                ✕
-              </button>
+      {/* EVENT DETAIL OVERLAY */}
+<AnimatePresence>
+  {selectedEvent && (
+    <motion.div
+      className="event-detail-backdrop"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      onClick={() => setSelectedEvent(null)}
+    >
+      <motion.div
+        className="event-detail"
+        initial={{ y: 80, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        exit={{ y: 80, opacity: 0 }}
+        transition={{ duration: 0.45, ease: "easeOut" }}
+        onClick={(e) => e.stopPropagation()}
+      >
+        {/* HEADER */}
+        <div className="event-detail-header">
+          <h1>{selectedEvent.title}</h1>
+          <p className="event-detail-date">
+            📅 {selectedEvent.date}
+          </p>
+        </div>
 
-              <span className="event-pill">{selectedEvent.type}</span>
-              <h2 style={{ marginTop: 16 }}>{selectedEvent.title}</h2>
-              <p style={{ color: "#19c7b8", marginTop: 8 }}>
-                📅 {selectedEvent.date}
-              </p>
-              <p style={{ marginTop: 16, color: "#8a9a9a" }}>
-                {selectedEvent.description}
-              </p>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+        {/* IMAGE */}
+        <div className="event-detail-image">
+          <img src={selectedEvent.image} alt={selectedEvent.title} />
+        </div>
+
+        {/* CONTENT */}
+        <div className="event-detail-content">
+          <p>{selectedEvent.description}</p>
+
+          {selectedEvent.instagram && (
+  <a
+    href={selectedEvent.instagram}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="event-instagram-btn"
+  >
+    <span className="insta-icon">📸</span>
+    View on Instagram
+    <span className="insta-arrow">↗</span>
+  </a>
+)}
+
+        </div>
+
+        {/* CLOSE */}
+        <button
+          className="event-detail-close"
+          onClick={() => setSelectedEvent(null)}
+        >
+          ✕
+        </button>
+      </motion.div>
+    </motion.div>
+  )}
+</AnimatePresence>
+
     </div>
   );
 }

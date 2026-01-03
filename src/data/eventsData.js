@@ -12,6 +12,7 @@ import devsprint24 from "../assets/events/devsprint-24.jpeg";
 import orientation24 from "../assets/events/orientation-24.jpeg";
 import resumeRevamp24 from "../assets/events/resume-revamp-24.jpeg";
 import felicitation24 from "../assets/events/felicitation-24.jpeg";
+import { ins } from "framer-motion/client";
 
 export const eventsData = [
   /* ================= 2025 EVENTS ================= */
@@ -26,6 +27,8 @@ export const eventsData = [
       "SpringCode’5 is Protégé’s mentorship-driven DSA cohort for skill-building and real-world learning.",
     image: springcode25,
     featured: true,
+    instagram: "https://www.instagram.com/p/DOd4JyGEiIM/?igsh=MW9wcnprbHV1OW90bA=="
+
   },
 
   {
@@ -33,7 +36,7 @@ export const eventsData = [
     year: 2025,
     type: "COMPETITION",
     title: "CodeWar 2025",
-    date: "February 2025",
+    date: "April 2025",
     description:
       "A fast-paced competitive coding battle testing speed, logic, and accuracy.",
     image: codewar25,
@@ -44,10 +47,11 @@ export const eventsData = [
     year: 2025,
     type: "COMPETITION",
     title: "Pen It 2025",
-    date: "January 2025",
+    date: "September 2025",
     description:
       "A mentorship-driven writing challenge where ideas on the future of tech turn into published impact.",
     image: penIt25,
+    instagram: "https://www.instagram.com/p/DPBH1BPEiLp/?igsh=bDE0MDI1MTJyMzBu"
   },
 
   {
@@ -55,7 +59,7 @@ export const eventsData = [
     year: 2025,
     type: "AWARDS",
     title: "Protege Felicitation 2025",
-    date: "November 2025",
+    date: "September 2025",
     description:
       "Honoring excellence and celebrating achievements of outstanding community members.",
     image: felicitation25,
@@ -66,10 +70,11 @@ export const eventsData = [
     year: 2025,
     type: "ORIENTATION",
     title: "Orientation Program 2025",
-    date: "July 2025",
+    date: "November 2025",
     description:
       "Welcoming new members and introducing them to the Protege culture and roadmap.",
     image: orientation25,
+    instagram:"https://www.instagram.com/reel/DRY5AZrknVK/?igsh=dGR0ejR2MDNxcmd4"
   },
 
   {
@@ -77,7 +82,7 @@ export const eventsData = [
     year: 2025,
     type: "CAREER",
     title: "Resume Revamp 2025",
-    date: "August 2025",
+    date: "December 2025",
     description:
       "A career-focused session helping students craft impactful resumes.",
     image: resumeRevamp25,
@@ -88,7 +93,7 @@ export const eventsData = [
     year: 2025,
     type: "MEETUP",
     title: "Open Meet 2025",
-    date: "September 2025",
+    date: "December 2025",
     description:
       "An open community meetup focused on networking, ideas, and collaboration.",
     image: openMeet25,
@@ -101,7 +106,7 @@ export const eventsData = [
     year: 2024,
     type: "CHALLENGE",
     title: "6 Companies in 30 Days",
-    date: "December 2024",
+    date: "January 2024",
     description:
       "A 30-day DSA challenge was conducted, offering daily problem-solving practice, collaborative learning opportunities, and rewards for top performers.",
     image: sixCompanies30Days24,
@@ -113,10 +118,11 @@ export const eventsData = [
     year: 2024,
     type: "MENTORSHIP",
     title: "CodeSolstice 2024",
-    date: "November 2024",
+    date: "February 2024",
     description:
       "A mentorship program was conducted to support DSA learning through guidance, collaboration, and skill development.",
     image: codesolstice24,
+    instagram:"https://www.instagram.com/p/C7bJnJwymcX/?igsh=d2VzZ2hqZHpwYWF5"
   },
 
   {
@@ -124,7 +130,7 @@ export const eventsData = [
     year: 2024,
     type: "SPRINT",
     title: "DevSprint 2024",
-    date: "October 2024",
+    date: "May 2024",
     description:
       "A 21-day intensive development program was conducted, encouraging team-based collaboration, real-world project building, mentorship, and portfolio enhancement.",
     image: devsprint24,
@@ -135,7 +141,7 @@ export const eventsData = [
     year: 2024,
     type: "ORIENTATION",
     title: "Orientation Program 2024",
-    date: "July 2024",
+    date: "September 2024",
     description:
       "Introducing new students to the Protege ecosystem and opportunities.",
     image: orientation24,
@@ -146,7 +152,7 @@ export const eventsData = [
     year: 2024,
     type: "CAREER",
     title: "Resume Revamp 2024",
-    date: "August 2024",
+    date: "December 2024",
     description:
       "Helping students improve their resumes through expert guidance, live reviews, and practical insights",
     image: resumeRevamp24,
@@ -157,9 +163,11 @@ export const eventsData = [
     year: 2024,
     type: "AWARDS",
     title: "Protege Felicitation 2024",
-    date: "November 2024",
+    date: "December 2024",
     description:
       "Celebrating achievements and recognizing excellence within the community.",
     image: felicitation24,
+    instagram:"https://www.instagram.com/reel/DDC0cloSdNS/?igsh=MXkxZjNkNHBtaGd5Yg%3D%3D"
+
   },
 ];
