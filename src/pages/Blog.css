@@ -157,14 +157,14 @@
   }
 .blog-header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   padding: 2rem 1rem;
 }
 
 .blog-header h1 {
   font-size: clamp(2.5rem, 8vw, 6rem);
   font-weight: 900;
-  margin-bottom: 1rem;
+  margin-bottom: 0.1rem;
   background: linear-gradient(135deg, #20B2AA 0%, #ffffff 50%, #20B2AA 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
