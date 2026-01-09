@@ -111,7 +111,7 @@ const Home = () => {
           </p>
 
           <div className="hero-buttons slide-up fade-in-delay-2">
-            <Link to="/mentorship" className="btn btn-primary">Join Us</Link>
+            <Link to="/coming-soon" className="btn btn-primary">Join Us</Link>
             <button className="btn btn-secondary"
             onClick={() => {
               document.getElementById('about').scrollIntoView({ behavior: 'smooth', block:"start" });
