@@ -7,7 +7,7 @@ import gallery4 from "../assets/gallery4.png";
 import gallery5 from "../assets/gallery5.jpg";
 import gallery6 from "../assets/gallery6.jpg";
 import gallery7 from "../assets/gallery7.jpg";
-import gallery8 from "../assets/gallery8.JPG";
+import gallery8 from "../assets/gallery8.jpg";
 
 const images = [
   { src: gallery1, layout: "small" }, 
