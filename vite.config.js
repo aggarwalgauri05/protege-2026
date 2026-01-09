@@ -5,6 +5,9 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   
+  // Handle uppercase image extensions
+  assetsInclude: ['**/*.JPG', '**/*.JPEG', '**/*.PNG', '**/*.GIF', '**/*.WEBP'],
+  
   build: {
     // Increase chunk size warning limit to prevent warnings from large dependencies
     chunkSizeWarningLimit: 1600,
